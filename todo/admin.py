@@ -5,7 +5,7 @@ from .models import Todo
 class TodoAdmin(admin.ModelAdmin):
     list_display = (
         'title', 
-        'body'
+        'body',
     )
     
 admin.site.register(Todo, TodoAdmin)
